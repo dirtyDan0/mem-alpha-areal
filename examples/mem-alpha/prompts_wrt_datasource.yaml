@@ -1,0 +1,80 @@
+# Adapted from https://github.com/wangyu-ustc/Mem-alpha/blob/main/config/prompts_wrt_datasource.yaml
+
+unified_prompt: "CONTENT:\n<new_chunk>\n{context}\n</new_chunk>\nEND"
+
+squad:
+    query_prompt: null
+    including_core: true
+
+hotpotqa:
+    query_prompt: null 
+    including_core: true
+
+booksum:
+    query_prompt: "Your core memory contains a comprehensive book summary. Use this information to fulfill the user's request."
+    including_core: true
+
+pubmed-rct:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+ttl_train:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Your semantic memory likely includes example labels. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+perltqa:
+    query_prompt: null
+    including_core: true
+
+lme_train:
+    query_prompt: null
+    including_core: true
+
+accurate_retrieval:
+    query_prompt: null
+    including_core: true
+
+ruler_qa1_197K:
+    query_prompt: null
+    including_core: true
+
+ruler_qa2_421K:
+    query_prompt: null
+    including_core: true
+
+infbench_qa_eng_shots2:
+    query_prompt: "The book has been memorized in the memory. Answer the question as briefly as possible. Only output the answer with no other text."
+    including_core: true
+
+longmemeval_s*:
+    query_prompt: null
+    including_core: true
+
+long_range_understanding:
+    query_prompt: "Your core memory contains a comprehensive book summary. Use this information to fulfill the user's request."
+    including_core: true
+
+test_time_learning:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Your semantic memory likely includes example labels. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+
+icl_banking77_5900shot_balance:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Your semantic memory likely includes example labels. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+icl_clinic150_7050shot_balance:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Your semantic memory likely includes example labels. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+icl_nlu_8296shot_balance:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Your semantic memory likely includes example labels. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+icl_trec_coarse_6600shot_balance:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
+
+icl_trec_fine_6400shot_balance:
+    query_prompt: "Your core memory is used to store the classification rules of the articles. Identify the meaning of each class and how the article is classified. Fulfill the user's request with the core memory.\n\nWhen answering questions, you should put the final prediction in the format of \\boxed{label}. Note that the label is a single number."
+    including_core: true
